@@ -12,12 +12,12 @@ let offset = $('.side-nav-menu').offset().left;
       $('.side-nav-menu').css({left:`-${widths}px` , transition: 'all 1s'});
       $(".open-close-icon").removeClass("fa-x");
       $(".open-close-icon").addClass("fa-align-justify");
-      $('.list-unstyled li').animate({top:300 },500)
+      $('.side-menue li').animate({top:300 },500)
   }else {
       $('.side-nav-menu').css({left:0 , transition: 'all 1s'});
       $(".open-close-icon").removeClass("fa-align-justify");
       $(".open-close-icon").addClass("fa-x");
-      $('.list-unstyled li').animate({top:0 },1000);
+      $('.side-menue li').animate({top:0 },1000);
   }
 })
 
@@ -27,10 +27,10 @@ function closeSideNav(){
       $('.side-nav-menu').css({left:-widthss},2000);
       $(".open-close-icon").removeClass("fa-x");
       $(".open-close-icon").addClass("fa-align-justify");
-      $('.list-unstyled li').animate({top:300 },500);
+      $('.side-menue li').animate({top:300 },500);
 }
 
-$('.list-unstyled li').click(function(){
+$('.side-menue li').click(function(){
   closeSideNav()
 })
 
